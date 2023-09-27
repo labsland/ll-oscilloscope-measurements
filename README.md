@@ -7,15 +7,16 @@
 Library for calculating oscilloscope measurements based on graph data.
 
 The goal is to provide transparency on how the LabsLand Hive ( https://labsland.com/web/hive )
-takes measurements, but it can be usedf or other purposes.
+takes measurements, but it can be used for other purposes.
 
 ## Installation
-
+```
 $ pip install ll-oscilloscope-measurements
+```
 
 ## Usage
 
-```
+```python
 import numpy as np
 import ll_oscilloscope_measurements as llom
 
@@ -30,13 +31,13 @@ llom.calculate_voltage_rms(sin_signal)
 # etc.
 ```
 
-See the code for all the functions.
+See [the code](ll_oscilloscope_measurements.py) for all the functions.
 
 ## Testing
 
-In the tests/data folder there are a set of CSV, JSON and images of different sets of samples (500 samples each).
+In the [tests/data](tests/data) folder there are a set of CSV, JSON, and images of different sets of samples (500 samples each).
 
-In the tests/unit/test_ll_oscilloscope_measurements.py file, you will find tests using those samples and evaluating the code with them.
+In the [tests/unit/test_ll_oscilloscope_measurements.py](tests/unit/test_ll_oscilloscope_measurements.py) file, you will find tests using those samples and evaluating the code with them.
 
 Feel free to add tests and run the following to test them:
 
