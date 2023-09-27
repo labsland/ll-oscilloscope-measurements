@@ -25,7 +25,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(name='ll-oscilloscope-measurements',
-      version='0.1.0',
+      version='0.1.1',
       description="",
       long_description=long_description,
       long_description_content_type="text/markdown",
@@ -38,7 +38,7 @@ setup(name='ll-oscilloscope-measurements',
       author_email='dev@labsland.com',
       url='https://github.com/labsland/ll-oscilloscope-measurements/',
       license=cp_license,
-      modules=['ll_oscilloscope_measurements.py'],
+      py_modules=['ll_oscilloscope_measurements'],
       install_requires=['numpy', 'scipy'],
       extra_requires={
           'test': ['pytest']
